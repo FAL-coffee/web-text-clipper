@@ -1,0 +1,29 @@
+{
+    "name": "web-text-clipper-dev",
+    "dockerComposeFile": [
+        "../docker-compose.yml"
+    ],
+    "service": "web-text-clipper-dev",
+    "workspaceFolder": "/app",
+    "settings": {
+        "files.trimTrailingWhitespace": true,
+        "editor.formatOnSave": true,
+        "typescript.updateImportsOnFileMove.enabled": "always",
+        "prettier.vueIndentScriptAndStyle": true,
+        "prettier.tabWidth": 2,
+        "[typescript]": {
+            "editor.defaultFormatter": "svipas.prettier-plus"
+        },
+        "[typescriptvue]": {
+            "editor.defaultFormatter": "svipas.prettier-plus"
+        },
+    },
+    "extensions": [
+        "octref.vetur",
+        "eamodio.gitlens",
+        "svipas.prettier-plus",
+        "dbaeumer.vscode-eslint",
+        "ms-ceintl.vscode-language-pack-ja",
+    ],
+    "postCreateCommand": "apt-get update && apt-get install -y git"
+}
