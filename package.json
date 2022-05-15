@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service build --mode development --watch",
-    "build": "vue-cli-service build",
+    "build": "vue-cli-service build src/main.js",
+    "generate": "npm run build && cp src/manifest.json dist/ && rm dist/index.html",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
