@@ -6,11 +6,13 @@
     "serve": "vue-cli-service build --mode development --watch",
     "build": "vue-cli-service build src/main.js",
     "generate": "npm run build && cp src/manifest.json dist/ && rm dist/index.html",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "tsc": "tsc"
   },
   "dependencies": {
     "axios": "^0.20.0",
     "core-js": "^3.6.5",
+    "husky": "^8.0.1",
     "vue": "^2.6.11",
     "vue-router": "^3.2.0",
     "vuex": "^3.4.0"
