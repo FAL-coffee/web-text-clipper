@@ -5,7 +5,9 @@ services:
       context: ./
       dockerfile: Dockerfile-dev
     volumes:
-      - ../../src:/usr/app/src
+      - /c/chrome-extension:/work
     ports:
       - "3000:3000"
     tty: true
+    environment:
+      - CHOKIDAR_USEPROLLING=true
