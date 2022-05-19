@@ -3,17 +3,17 @@
 </template>
 
 <script lang="ts">
-  import HelloWorld from '@/components/HelloWorld.vue';
+import HelloWorld from "@/components/HelloWorld.vue";
 
-  export default {
-    name: 'App',
-    components: { HelloWorld },
-  };
+export default {
+  name: "App",
+  components: { HelloWorld },
+};
 </script>
 
 <style>
-  html {
-    width: 400px;
-    height: 400px;
-  }
+html {
+  width: 400px;
+  height: 400px;
+}
 </style>
