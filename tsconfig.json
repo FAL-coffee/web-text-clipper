@@ -10,21 +10,10 @@
     "strict": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": [
-        "src/*"
-      ],
-      "~/*": [
-        "src/*"
-      ]
+      "@/*": ["src/*"],
+      "~/*": ["src/*"]
     }
   },
-  "include": [
-    "./src/**/*.ts",
-    "./src/**/*.vue",
-    "vue-shims.d.ts"
-  ],
-  "exclude": [
-    "node_modules",
-    "dist"
-  ]
+  "include": ["./src/**/*.ts", "./src/**/*.vue", "vue-shims.d.ts"],
+  "exclude": ["node_modules", "dist"]
 }
