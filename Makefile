@@ -1,3 +1,4 @@
+# DockerとかMakefileあんまり意味無いかも。distが選択出来なくて困った
 init: 
 	docker compose build
 	docker compose run web-text-clipper-dev yarn install
