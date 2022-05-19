@@ -2,5 +2,5 @@
 //   console.log('Hello from the background')
 // })
 chrome.runtime.onMessage.addListener(function () {
-  console.log('Hello from the background');
+  console.log("Hello from the background");
 });
